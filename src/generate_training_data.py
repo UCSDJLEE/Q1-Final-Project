@@ -38,7 +38,7 @@ def generate_training_data(fp, features, labels, spectators, bump_size=3):
 	i=0
 
 	for i in range(0, len(training_files), bump_size):
-		training_temp = tralining_files[i:i+3]
+		training_temp = training_files[i:i+bump_size]
 		training_generator = DataGenerator(training_temp, features, labels, spectators,
 			remove_unlabeled=True, max_entry=8000)
 		training_gens.append(training_generator)
