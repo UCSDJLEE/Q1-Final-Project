@@ -13,15 +13,14 @@ def extract_labels(fp):
 	'''
 
 	with open(fp, 'r') as f:
-		defs = yaml.load(fp, Loader=yaml.FullLoader) # FullLoader converts data from yml structure
-													 # to Python dictionary
+		defs = yaml.load(fp, Loader=yaml.FullLoader) # FullLoader converts data from yml structure to Python dictionary
 
-	 features = defs['features']
-	 spectators = defs['spectators']
-	 labels = defs['labels']
+	features = defs['features']
+	spectators = defs['spectators']
+	labels = defs['labels']
 
-	 nfeatures = defs['nfeatures']
-	 nspectators = defs['nspectators']
-	 nlabels = defs['nlabels']
+	nfeatures = defs['nfeatures']
+	nspectators = defs['nspectators']
+	nlabels = defs['nlabels']
 
-	 return (features, spectators, labels, nfeatures, nspectators, nlabels)
+	return (features, spectators, labels, nfeatures, nspectators, nlabels)
