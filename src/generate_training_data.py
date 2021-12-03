@@ -43,6 +43,6 @@ def generate_training_data(fp, features, labels, spectators, bump_size=3):
 			remove_unlabeled=True, max_entry=8000)
 		training_gens.append(training_generator)
 		counter+=1;
-		print(f'{counter} DataGenerator instantiated')
+		print(f'{counter} sets of DataGenerator instantiated')
 
 	return training_gens

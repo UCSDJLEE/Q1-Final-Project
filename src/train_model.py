@@ -29,7 +29,7 @@ def train_model(training_gens):
 	x = Dense(32, name='HiddenLayer4', activation='relu')(x)
 	outputs = Dense(nlabels, name='OutputLayer', activation='softmax')(x) # Binary classificatio
 	nn_classifier = Model(inputs=inputs, outputs=outputs)
-	# print(nn_classifier.summary())
+	print('\n', nn_classifier.summary())
 
 	# Compile the classifier with appropriate `optimizer`, `loss`, `metrics` parameters
 
@@ -46,7 +46,7 @@ def train_model(training_gens):
 	binary_loss = tf.keras.losses.BinaryCrossentropy()
 	binary_metric = tf.keras.metrics.BinaryAccuracy()
 
-	nn_classifer.compile(optimizer=adam_optimizer,
+	nn_classifier.compile(optimizer=adam_optimizer,
 					loss=binary_loss,
 					metrics=[binary_metric])
 
