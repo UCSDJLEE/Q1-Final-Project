@@ -25,7 +25,7 @@ def main():
 
 	# Load test data into DataGenerator
 	test_dir_path = '/home/h8lee/teams/DSC180A_FA21_A00/a11/test/'
-	test_files = os.listdirc(test_dir_path)
+	test_files = os.listdir(test_dir_path)
 	test_file_path = [test_dir_path+f for f in test_files]
 	test_generator = DataGenerator(test_file_path, features, labels, spectators,
 					remove_unlabeled=True)
