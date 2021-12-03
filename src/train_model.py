@@ -16,8 +16,7 @@ def train_model(training_gens):
 	sample_generator = training_gens[0]
 	sample_X = sample_generator[1][0]
 	sample_y = sample_generator[1][1]
-	ntracks, nfeatures = sample_X.shape[1:] # Note that sample_X.shape[0] represents number of jets
-											# per batch 
+	ntracks, nfeatures = sample_X.shape[1:] # Note that sample_X.shape[0] represents number of jets per batch 
 	nlabels = sample_y.shape[1]
 
 	# Structuring Fully Connected NN
