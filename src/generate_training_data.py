@@ -1,5 +1,5 @@
 import os
-import DataGenerator
+from DataGenerator import DataGenerator
 
 def generate_training_data(fp, features, labels, spectators, bump_size=3):
 	'''
