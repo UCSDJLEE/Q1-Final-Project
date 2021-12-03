@@ -61,4 +61,4 @@ def train_model(training_gens):
 	                      epochs=100, validation_split=0.25, shuffle=False,
 	                      callbacks=callbacks, verbose=0)
 
-    return nn_classifer
+	return nn_classifer
