@@ -43,7 +43,7 @@ def train_model(training_gens):
 	# Evaluation metric:
 	# Used accuracy to measure performance of classifer
 	adam_optimizer = tf.keras.optimizers.Adam(learning_rate=1e-3)
-	binary_loss = tf.keras..BinaryCrossentropy()
+	binary_loss = tf.keras.BinaryCrossentropy()
 	binary_metric = tf.keras.metrics.BinaryAccuracy()
 
 	nn_classifer.compile(optimizer=adam_optimizer,
