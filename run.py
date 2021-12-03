@@ -55,7 +55,8 @@ def main():
 	# Now compute all metrics to measure performance of our classifier
 	fpr, tpr, auc = compute_metrics(test_lbls, test_preds)
 
-	print(f'AUC = {round(auc*100, 2)}%')
+	print('\n', f'AUC = {round(auc*100, 2)}%')
+	print('`run.py` ran successfully. model performance evaluated and reviewed')
 	return
 
 if __name__ == '__main__':
