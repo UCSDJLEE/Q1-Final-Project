@@ -35,14 +35,14 @@ def generate_training_data(fp, features, labels, spectators, bump_size=3):
 	contents = os.listdir(fp)
 	training_files = [fp+x for x in contents]
 	training_gens = list()
-	i=0
+	counter=0
 
 	for i in range(0, len(training_files), bump_size):
 		training_temp = training_files[i:i+bump_size]
 		training_generator = DataGenerator(training_temp, features, labels, spectators,
 			remove_unlabeled=True, max_entry=8000)
 		training_gens.append(training_generator)
-		i+=1;
-		print(f'{i} DataGenerator instantiated')
+		counter+=1;
+		print(f'{counter} DataGenerator instantiated')
 
 	return training_gens
