@@ -26,7 +26,7 @@ def train_model(training_gens):
 	x = Flatten(name='Flatten')(x)
 	x = Dense(64, name='HiddenLayer1', activation='relu')(x)
 	x = Dense(64, name='HiddenLayer2', activation='relu')(x) 
-	x = Dense(32, name='HiddenLayer4', activation='relu')(x)
+	x = Dense(32, name='HiddenLayer3', activation='relu')(x)
 	outputs = Dense(nlabels, name='OutputLayer', activation='softmax')(x) # Binary classificatio
 	nn_classifier = Model(inputs=inputs, outputs=outputs)
 	print('\n', nn_classifier.summary())

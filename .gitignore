@@ -1,1 +1,5 @@
+# Get rid of the tracker on cache directories and checkpoint cache directory
+
 src/__pycache__/
+
+notebooks/.ipynb_checkpoints/
