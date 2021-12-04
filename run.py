@@ -62,4 +62,5 @@ def main(targets):
 		return
 
 if __name__ == '__main__':
-	main()
+	targets = sys.argv[1:]
+	main(targets)
