@@ -1,0 +1,4 @@
+{
+	"dockerhub-id": "h8le/jleefinalproject",
+	"build-script": "python3 run.py test"
+}
